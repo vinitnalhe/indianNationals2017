@@ -119,6 +119,13 @@ li {
 	background: -moz-linear-gradient(bottom right, rgba(250,50,50,0.8) , rgba(250,50,50,0.8)), url('../images/slide1_bg.jpg') no-repeat;
 	background: linear-gradient(to bottom right,rgba(250,50,50,0.8) , rgba(250,50,50,0.8)), url('../images/slide1_bg.jpg') no-repeat;
 }
+.sponsors-overlay-bg{
+	background: -webkit-linear-gradient(left top, rgba(50,250,50,0.8) , rgba(50,250,50,0.8)), url('../images/slide1_bg.jpg') no-repeat; 
+	background: -o-linear-gradient(bottom right, rgba(50,250,50,0.8) , rgba(50,250,50,0.8)), url('../images/slide1_bg.jpg') no-repeat;
+	background: -moz-linear-gradient(bottom right, rgba(50,250,50,0.8) , rgba(50,250,50,0.8)), url('../images/slide1_bg.jpg') no-repeat;
+	background: linear-gradient(to bottom right,rgba(50,250,50,0.8) , rgba(50,250,50,0.8)), url('../images/slide1_bg.jpg') no-repeat;
+}
+
 .schedule-overlay-bg{
 	background: -webkit-linear-gradient(left top, rgba(0,0,0,0.8) , rgba(0,0,0,0.8)), url('../images/slide1_bg.jpg') no-repeat; 
 	background: -o-linear-gradient(bottom right, rgba(0,0,0,0.8) , rgba(0,0,0,0.8)), url('../images/slide1_bg.jpg') no-repeat;
@@ -3932,7 +3939,6 @@ font-size: 18px;
 }
 
 
-
-
-
-
+.mybod {
+ border: 3px solid grey;
+}
