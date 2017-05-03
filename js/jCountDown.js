@@ -7,11 +7,14 @@ function Countdown()
         dd = 28-dd + 72;
     } else if(mnth==2) {
         dd = 31 - dd + 30 + 11;
-    } else {
+        }
+        else if(mnth==4) {
+        dd =  11 -dd;    
+        } else 
+{
         dd = 30 - dd + 11;
     }
-
-    var hr = (24-today.getHours()+ 7)%24 ;
+   var hr = (24-today.getHours()+ 7)%24 ;
     var min = (60-today.getMinutes())%60;
     var sec = (60-today.getSeconds())%60;
     this.start_time = ""+dd+":"+hr+":"+min+":"+sec+"";
