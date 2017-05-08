@@ -1,9 +1,24 @@
 import glob as glob
 s=""
+
+
+def makegoodname(name):
+	A=[]
+	for j in range(len(name)):
+		if not name[j].islower():
+			A.append(j)
+	A1=[]
+	for j in range(len(A)-1):
+		A1.append(name[A[j]:A[j+1]])
+	A1.append(name[A[-1]:])
+	return " ".join(A1)
+
+
 for myfile in sorted(glob.glob("Heats/*.pdf")):
 	fname=myfile.split("Heats/")[1]
-	print fname
-	s+="<li> <a href=" +fname+">" + fname+ "</li>"+"\n"
+	pname=fname[:-4]
+	gname=makegoodname(pname)
+	s+="<li> <a href=" +fname+">" + gname+ "</li>"+"\n"
 	
 s1="""<html> 
 	<head> 
