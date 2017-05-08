@@ -1,6 +1,6 @@
 import glob as glob
 s=""
-for myfile in glob.glob("Heats/*.pdf"):
+for myfile in sorted(glob.glob("Heats/*.pdf")):
 	fname=myfile.split("Heats/")[1]
 	print fname
 	s+="<li> <a href=" +fname+">" + fname+ "</li>"+"\n"
