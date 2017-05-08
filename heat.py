@@ -7,9 +7,10 @@ for myfile in sorted(glob.glob("Heats/*.pdf")):
 	
 s1="""<html> 
 	<head> 
-	<title=\"Personal Heats\">
+	<title="Personal Heats">
 	</head>
 	<body>
+	<h1> Personal Heats - Indian Nationals 2017 </h1>
 """
 
 f1=open("Heats/index.html",'wb')
